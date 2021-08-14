@@ -8,6 +8,10 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
+func init() {
+	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
+}
+
 func Connect(addr string) (*redis.Client, error) {
 	ctx := context.Background()
 	rdb := redis.NewClient(&redis.Options{
