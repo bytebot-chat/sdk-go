@@ -1,8 +1,6 @@
 package bytebot
 
 import (
-	"encoding/json"
-
 	"github.com/satori/go.uuid"
 )
 
